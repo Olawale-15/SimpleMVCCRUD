@@ -1,0 +1,16 @@
+﻿@model List<MVCPractice.Models.Student>
+<h3>List of all registerder student</h3>
+<li>
+	@foreach(var student in Model)
+	{
+		<div>
+			<ul>
+				<li>
+					<div class="mb-3">FirstName:@student.FirstName<br></div>
+					<div class="mb-3">LastName:@student.LastName<br></div>
+					<div class="mb-3">Email:@student.Email</div>
+				</li>
+			</ul>
+		</div>
+	}
+</li>
